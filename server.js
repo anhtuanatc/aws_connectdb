@@ -20,6 +20,10 @@ app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, 'build', 'index.html'));
 });
 
+app.get('/checkDb', (req, res) => {
+    console.log('check db');
+});
+
 app.get('/favicon.ico', (req, res) => {
     res.sendFile(path.join(`${__dirname}/favicon.ico`));
 });

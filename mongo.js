@@ -16,5 +16,5 @@ http.createServer((req, res) => {
             res.write("No members found");
         }
         res.end();
-    });
+    }).catch(err => console.log('db-erro'));
 }).listen(8000);
